@@ -1,2 +1,2 @@
 # hizzyjs
-This is the web site of Hizzy!
+This is the website of Hizzy!
