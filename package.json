@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "docs:dev": "npx vitepress dev docs",
+    "docs:build": "npx vitepress build docs",
+    "docs:preview": "npx vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.0.0-beta.5"
+  }
+}
