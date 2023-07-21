@@ -12,7 +12,7 @@ variable named [`currentClient`](#the-variable-currentclient) will be defined.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server
 function myFunction() {
     console.log("Someone just clicked to the button!"); // This message will be shown in the server-sided terminal
@@ -42,7 +42,7 @@ named [`currentClient`](#the-variable-currentclient) will be defined.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server
 function myFunction(a, b) {
     return a + b;
@@ -77,7 +77,7 @@ of the process. The code will be executed in the server-side.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server/start
 function onStart() {
     console.log("This will be shown in the server-side terminal!");
@@ -92,7 +92,7 @@ will be defined.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server/join
 function onJoin() {
     const uuid = currentClient.uuid;
@@ -108,7 +108,7 @@ will be defined.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server/leave
 function onLeave() {
     const uuid = currentClient.uuid;
@@ -131,7 +131,7 @@ used by the server-sided functions.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server
 function serverFunction() {
     console.log("This message will be shown in the server-sided terminal.");
@@ -165,7 +165,7 @@ This function will be run immediately when the page gets rendered.
 
 Example:
 
-```jsx
+```jsx {1}
 // @server
 function serverFunction() {
     console.log("This message will be shown in the server-sided terminal.");
@@ -187,7 +187,7 @@ This function will be run immediately before a navigation/reload. Will be useful
 
 Example:
 
-```jsx
+```jsx {3}
 const worker = new Worker("./someScript.js");
 
 // @client/navigate
@@ -215,7 +215,7 @@ decorators: `@server`, `@server/respond`, `@server/join`, `@server/leave`
 
 Here are some examples of all methods:
 
-```js
+```js {1}
 // @server/join
 async function onJoin() {
     const response = await currentClient.eval("2 + 2"); // 4
