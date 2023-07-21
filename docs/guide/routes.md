@@ -47,7 +47,7 @@ The `onRequest` attribute determines what actions should be taken when a request
 function list. Given function(s) should be in this format:
 
 ```ts
-(request: Request, response: Response, next: NextFunction) => void
+(request: Request, response: Response, next: NextFunction, ...args: any[]) => void
 ```
 
 If the function `next` is not called it stops the flow causing it to not process the give `route`(if given) and also
@@ -57,6 +57,24 @@ this:
 ```jsx
 export default <Routes>
     <Route path="/" onRequest={(request, response) => response.sendFile(__dirname + "App.jsx")}/>
+</Routes>;
+```
+
+You can also communicate between the `NextFunction`s!
+
+Example:
+
+```jsx
+function first(req, res, next) {
+    next("Hello world!", 1);
+}
+
+function second(req, res, next, text, number) {
+    res.send("The text is: " + text + ", and the number is: " + number);
+}
+
+export default <Routes>
+    <Route path="/" onRequest={[first, second]}/>
 </Routes>;
 ```
 
@@ -76,6 +94,6 @@ This will basically append `/a` and `/b` to create `/a/b` path which will be rou
 
 ::: tip Tip
 
-Nested route components only append their `path`! `allow`, `deny`, `onRequest` won't be appended for various reasons.
+Nested route components can append their `path`, `allow`, `deny`, `onRequest`!
 
 :::
