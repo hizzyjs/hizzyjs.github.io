@@ -7,7 +7,19 @@ This addon comes with a bunch of databases built in it.
 These databases are classified to be easier to use.
 
 ```js
+import Database from "@hizzyjs/database";
 
+const mongoDb = new Database.Mongo("mongo url here", {
+    // mongo options
+}); // Returns a "mongodb" connection instance.
+
+const mysqlDb = new Database.MySQL({
+    // mysql options
+}); // Returns a "mysql" connection instance.
+
+const sqliteDb = new Database.MySQL("file name here", {
+    // sqlite options
+}); // Returns a "sqlite" connection instance.
 ```
 
 ## XML
