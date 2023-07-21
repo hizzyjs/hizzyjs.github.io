@@ -14,8 +14,8 @@ Example:
 
 ```jsx
 // @server
-function myFunction(a, b) {
-    console.log(a + b);
+function myFunction() {
+    console.log("Someone just clicked to the button!"); // This message will be shown in the server-sided terminal
 }
 
 export default <button onClick={myFunction}>
