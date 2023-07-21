@@ -165,10 +165,4 @@ You shouldn't toggle this mid-process.
 
 # Hizzy.routes
 
-This value is fetched from the main file.
-
-::: warning Warning
-
-You shouldn't change this mid-process.
-
-:::
+This value is fetched from the main file. Readonly object.
