@@ -55,4 +55,17 @@ check [Injecting Server Sided Variables](#injecting-server-sided-variables).
 
 ## Injecting Server Sided Variables
 
-To use backend variables you can inject them using JSON.stringify.
+To use server-sided variables, you can set the function to a stringified function.
+
+Example:
+
+```js
+    // ...
+
+    onClientSideLoad = (() => {
+        const aString = "ReplaceMe!";
+        console.log(aString);
+    }).toString().replace("ReplaceMe!", "Hello, world!");
+
+    // ...
+```
