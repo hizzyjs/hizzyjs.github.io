@@ -11,6 +11,8 @@ directory. It will try to resolve these files in order and find the first one th
 - /hizzy.config.json
 - /hizzy.config.ts
 - /hizzy.config.js
+- /hizzy.config.mts
+- /hizzy.config.mjs
 
 The most basic config file looks like this:
 
