@@ -9,20 +9,11 @@ const deployURL = process.env.DEPLOY_PRIME_URL || "";
 const commitRef = process.env.COMMIT_REF?.slice(0, 8) || "dev";
 
 const deployType = (() => {
-    switch (deployURL) {
-        case "never":
-            return "main";
-        case "":
-            return "local";
-        default:
-            return "release";
-    }
+    return "release";
 })();
 
 const additionalTitle = ((): string => {
     switch (deployType) {
-        case "main":
-            return " (main branch)";
         case "local":
             return " (local)";
         case "release":
