@@ -43,7 +43,7 @@ named [`currentClient`](#the-variable-currentclient) will be defined.
 Example:
 
 ```jsx {1}
-// @server
+// @server/respond
 function myFunction(a, b) {
     return a + b;
 }
