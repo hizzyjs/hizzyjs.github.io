@@ -47,19 +47,19 @@ project root, so you'll need to move it if the root is changed.
 You can create the default example of Hizzy by using one of these:
 
 ```bash
+npm create hizzy
+```
+
+```bash
+npx create-hizzy
+```
+
+```bash
 npx create-hizzy-app
 ```
 
 ```bash
 npx create-hizzy-project
-```
-
-```bash
-npx @hizzyjs/init
-```
-
-```bash
-npx @hizzyjs/setup
 ```
 
 ## Command Line Interface
