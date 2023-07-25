@@ -23,8 +23,8 @@ export default {
 };
 ```
 
-Note Hizzy supports using ES modules syntax in the config file even if the project is not using native Node ESM,
-e.g. `type: "module"` in `package.json`. In this case, the config file is auto pre-processed before load.
+Note that, to use ES modules syntax, either your file should end with .mjs or in the package.json you should
+set `"type"` to `"module"`.
 
 You can also explicitly specify a config file to use with the `--config` CLI option (resolved relative to `cwd`):
 
@@ -74,7 +74,7 @@ export default Hizzy.defineConfig({
 });
 ```
 
-Hizzy also directly supports TS config files. You can use `hizzy.config.ts` with the `defineConfig` helper as well.
+Hizzy also directly supports TS config files. You can use `hizzy.config.mts` with the `defineConfig` helper as well.
 
 ## Conditional Config
 
