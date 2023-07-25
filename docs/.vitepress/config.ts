@@ -78,10 +78,6 @@ export default defineConfig({
                             link: "/guide/"
                         },
                         {
-                            text: "CLI",
-                            link: "/guide/cli"
-                        },
-                        {
                             text: "Using Decorators",
                             link: "/guide/decorators"
                         },
@@ -92,6 +88,10 @@ export default defineConfig({
                         {
                             text: "Using Addons",
                             link: "/guide/using-addons"
+                        },
+                        {
+                            text: "CLI",
+                            link: "/guide/cli"
                         },
                         {
                             text: "Preparing for Production",
