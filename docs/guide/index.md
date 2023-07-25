@@ -39,8 +39,28 @@ Running `npx hizzy` starts the Hizzy server using the current working directory 
 root
 with `npx hizzy path/to/project`.
 
-Note that Hizzy will also resolve [its config file (i.e. `hizzy.config.js`)](./config) inside the
+Note that Hizzy will also resolve [its config file (i.e. `hizzy.config.mjs`)](./config) inside the
 project root, so you'll need to move it if the root is changed.
+
+## Setting Up An Example Project
+
+You can create the default example of Hizzy by using one of these:
+
+```bash
+npx create-hizzy-app
+```
+
+```bash
+npx create-hizzy-project
+```
+
+```bash
+npx @hizzyjs/init
+```
+
+```bash
+npx @hizzyjs/setup
+```
 
 ## Command Line Interface
 

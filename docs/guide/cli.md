@@ -1,13 +1,13 @@
 # Command Line Interface
 
-## `hizzy`
+## `npx hizzy`
 
 Starts Hizzy in the current directory.
 
 ### Usage
 
 ```bash
-hizzy [root]
+npx hizzy [root]
 ```
 
 ### Options
