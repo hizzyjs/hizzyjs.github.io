@@ -26,6 +26,7 @@ npx hizzy [root]
 | `--debug-socket`     | Reveals the packets of sockets to console, requires `--debug` |
 | `--addon-init`       | Initializes up an addon environment                           |
 | `--no-clear`         | Disables the initial screen clear                             |
+| `--ts`               | Makes the setup process prefer TypeScript                     |
 | `--config=PATH`      | Sets the path of the config (`string`)                        |
 | `-p, --port=PORT`    | Sets the port to listen on (`number`)                         |
 | `--injections`       | Builds HTML/JSX injection files (EXPERIMENTAL)                |
