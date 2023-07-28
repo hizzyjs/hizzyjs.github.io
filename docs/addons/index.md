@@ -26,6 +26,11 @@
 - This addon adds a new component called Lang which can be used to add language support to your application.
 - [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/language)
 
+### [@hizzyjs/sass](./sass)
+
+- This addon adds SASS support to your project.
+- [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/language)
+
 ### [@hizzyjs/images](./images)
 
 - This addon is being worked on.
