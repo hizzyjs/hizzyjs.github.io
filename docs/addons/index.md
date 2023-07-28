@@ -29,7 +29,6 @@
 ### [@hizzyjs/sass](./sass)
 
 - This addon adds SASS support to your project.
-- [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/language)
 
 ### [@hizzyjs/images](./images)
 
