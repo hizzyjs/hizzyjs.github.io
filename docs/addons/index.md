@@ -29,6 +29,11 @@
 ### [@hizzyjs/sass](./sass)
 
 - This addon adds SASS support to your project.
+- 
+### [@hizzyjs/html2react](./html2react)
+
+- This addon adds the ability to convert HTML to React components easily.
+  - [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/html-jsx)
 
 ### [@hizzyjs/api](./api)
 
