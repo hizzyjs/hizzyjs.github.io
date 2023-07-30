@@ -108,6 +108,10 @@ export default defineConfig({
                         {
                             text: "Routes",
                             link: "/guide/routes"
+                        },
+                        {
+                            text: "Addons",
+                            link: "/addons"
                         }
                     ]
                 },
@@ -136,6 +140,7 @@ export default defineConfig({
                         {text: "Helmet", link: "/addons/helmet"},
                         {text: "Language", link: "/addons/language"},
                         {text: "SASS", link: "/addons/sass"},
+                        {text: "HTML To React", link: "/addons/html2react"},
                         {text: "API", link: "/addons/api"},
                         {text: "Images", link: "/addons/images"},
                         {text: "Requests", link: "/addons/requests"}
