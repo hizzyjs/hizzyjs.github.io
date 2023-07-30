@@ -16,9 +16,9 @@ and it gives you access to your account.
 Example:
 
 ```jsx
-import Auth from "@hizzyjs/authentication";
+import {LocalAuthentication} from "@hizzyjs/authentication";
 
-global.auth = new Auth.LocalAuthentication({
+global.auth = new LocalAuthentication({
     cookie: "TheSecretCookieName" // This is the name of the cookie that will be set for the client
 });
 
@@ -67,9 +67,9 @@ Discord authentication adds the feature to authenticate your users using Discord
 Example:
 
 ```jsx
-import Auth from "@hizzyjs/authentication";
+import {DiscordAuthentication} from "@hizzyjs/authentication";
 
-global.auth = new Auth.DiscordAuthentication({
+global.auth = new DiscordAuthentication({
     clientId: "The Client ID of your application",
     clientSecret: "The Client Secret of you application",
     callbackURL: "The callback URL of your application",

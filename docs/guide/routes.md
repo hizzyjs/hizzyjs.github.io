@@ -78,6 +78,20 @@ export default <Routes>
 </Routes>;
 ```
 
+If you want to tell it to continue for searching other routes you can use `next(true)`:
+
+```jsx
+function first(req, res, next) {
+    next(true); // this will continue with the next route!
+    // only works for the last onRequest function!
+}
+
+export default <Routes>
+    <Route path="/" onRequest={first}/>
+    <Route path="/" route="App.jsx"/>
+</Routes>;
+```
+
 ## Nested Routes
 
 Route components can include Route components inside themselves which appends the paths. An example:

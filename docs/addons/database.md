@@ -7,17 +7,17 @@ This addon comes with a bunch of databases built in it.
 These databases are classified to be easier to use.
 
 ```js
-import Database from "@hizzyjs/database";
+import {Mongo, MySQL, SQLite} from "@hizzyjs/database";
 
-const mongoDb = new Database.Mongo("mongo url here", {
+const mongoDb = new Mongo("mongo url here", {
     // mongo options
 }); // Returns a "mongodb" connection instance.
 
-const mysqlDb = new Database.MySQL({
+const mysqlDb = new MySQL({
     // mysql options
 }); // Returns a "mysql" connection instance.
 
-const sqliteDb = new Database.MySQL("file name here", {
+const sqliteDb = new SQLite("file name here", {
     // sqlite options
 }); // Returns a "sqlite" connection instance.
 ```
@@ -27,9 +27,9 @@ const sqliteDb = new Database.MySQL("file name here", {
 Nothing to explain here, quick example:
 
 ```js
-import Database from "@hizzyjs/database";
+import {XML} from "@hizzyjs/database";
 
-const read = Database.XML.parse("<xml> <something a='1'></something> </xml>");
+const read = XML.parse("<xml> <something a='1'></something> </xml>");
 ```
 
 ## JSON
@@ -37,9 +37,9 @@ const read = Database.XML.parse("<xml> <something a='1'></something> </xml>");
 A quick example:
 
 ```js
-import Database from "@hizzyjs/database";
+import {JSON} from "@hizzyjs/database";
 
-const db = new Database.JSON("./data.json");
+const db = new JSON("./data.json");
 
 db.set("name", "Jeff");
 console.log("My name is " + db.get("name")); // My name is Jeff
@@ -65,7 +65,8 @@ Making nested:
 ```js
 const nestedDb = db.asNested();
 // OR just use this at the beginning
-const db = new Database.NestedJSON("./data.json");
+import {NestedJSON} from "@hizzyjs/database";
+const db = new NestedJSON("./data.json");
 
 // Now the character dot will make the key nested
 nestedDb.set("a.b.c", 1);
