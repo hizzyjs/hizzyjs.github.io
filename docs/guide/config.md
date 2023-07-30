@@ -41,6 +41,8 @@ hizzy --config=my-config.js
 |         `listen`         |           Whether it should automatically listen or not            |      true       |
 |          `main`          |              The main file located in the src folder               |  "Server.jsx"   |
 |       `mainModule`       |          Whether the main file is a modulejs file or not           |      true       |
+|        `baseHTML`        |       The base HTML file located in the src folder(optional)       |   index.html    |
+|    `allowAllPackages`    | Whether it should allow client to load any package in node_modules |      false      |
 |      `checkConfig`       |     Whether it should complete the config file(only for JSON)      |      true       |
 |        `realtime`        |          Whether it should create a socket server or not           |      true       |
 |         `static`         |              Check [Static Asset Handling](./assets)               | Object or Array |

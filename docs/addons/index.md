@@ -30,17 +30,16 @@
 
 - This addon adds SASS support to your project.
 
+### [@hizzyjs/api](./api)
+
+- This addon makes it really easy to make APIs inside your Hizzy app by adding custom Route components!
+- [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/api)
+
 ### [@hizzyjs/images](./images)
 
 - This addon is being worked on.
 - This addon adds a new progressive loading to images that first start blurry then appear as normal.
 - [Click me to view an example](https://github.com/hizzyjs/hizzy/tree/main/examples/images)
-
-### [@hizzyjs/api](./api)
-
-- This addon is being worked on.
-- This addon makes it really easy to make APIs inside your Hizzy app by adding custom Route components!
-- [Click me to view an example(Not available)](https://github.com/hizzyjs/hizzy/tree/main/examples/api)
 
 ### [@hizzyjs/requests](./requests)
 

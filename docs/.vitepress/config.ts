@@ -135,8 +135,9 @@ export default defineConfig({
                         {text: "Error Overlay", link: "/addons/error-overlay"},
                         {text: "Helmet", link: "/addons/helmet"},
                         {text: "Language", link: "/addons/language"},
-                        {text: "Images", link: "/addons/images"},
+                        {text: "SASS", link: "/addons/sass"},
                         {text: "API", link: "/addons/api"},
+                        {text: "Images", link: "/addons/images"},
                         {text: "Requests", link: "/addons/requests"}
                     ]
                 }
