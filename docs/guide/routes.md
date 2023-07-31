@@ -30,9 +30,10 @@ The `method` attribute determines the method of the request. `GET` is the defaul
 ### allow
 
 The `allow` attribute determines which files the given file can access. This attribute only makes sense for JSX/TSX
-files. It expects a string(file path) array or `"*"`. Setting it to `"*"` makes the file be able to access every file in
-the source
-folder. By default, this is set to `"*"`.
+files. It expects a string(file path) array or `"*"` or `"auto"`. Setting it to `"*"` makes the file be able to access
+every file in
+the source folder. Setting it to `"auto"` makes it check the imports of the files the route file imports. By default,
+this is set to `"auto"`.
 
 ### deny
 
