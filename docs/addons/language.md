@@ -27,10 +27,34 @@ You can use the client-sided value of the addon as a component.
 Example:
 
 ```jsx
-import Lang from "@hizzyjs/helmet";
+import {Lang} from "@hizzyjs/helmet";
 
 export default <>
-    The value of the key 'myKey': <Lang>myKey</Lang>
+    The value of the key 'myKey': <Lang>myKey</Lang> <br/>
+    Or, <br/>
+    The value of the key 'myKey': <Lang value="myKey"/> <br/>
+    Or, <br/>
+    The value of the key 'myKey': <Lang v="myKey"/>
+</>;
+```
+
+You can even add arguments to your language strings!
+
+Example:
+
+```json
+// language.json
+{
+  "myKey": "Hello, %something!"
+}
+```
+
+```jsx
+// App.jsx
+import {Lang} from "@hizzyjs/helmet";
+
+export default <>
+    the result is: <Lang args={{something: "world"}} v="myKey"/>
 </>;
 ```
 
@@ -39,7 +63,7 @@ Additionally, you can use the readonly properties of the component.
 Example:
 
 ```jsx
-import Lang from "@hizzyjs/helmet";
+import {Lang} from "@hizzyjs/helmet";
 
 Lang.language; // This is the current language
 
