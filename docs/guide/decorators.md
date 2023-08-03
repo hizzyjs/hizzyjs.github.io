@@ -196,6 +196,26 @@ function serverFunction() {
 }
 ```
 
+## Running client-sided functions from server-sided functions
+
+```jsx
+// @server
+function myServerFunction(a) {
+    myClientFunction(a); // runs the function for the client that ran this function
+    
+    myClientFunction.everyone(a); // runs the function for every client that is connected to the web site
+    
+    const allClients = Object.values(Hizzy.Client.clients);
+    myClientFunction.toClients([ allClients[0], allClients[3] ])(a); // run the function for "some" clients
+}
+
+function myClientFunction(something) {
+    console.log(something);
+}
+
+myServerFunction("hey");
+```
+
 ## The variable `currentClient`
 
 This variable can be accessed by functions that have one of these
